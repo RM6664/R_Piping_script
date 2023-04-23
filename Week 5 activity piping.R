@@ -67,7 +67,7 @@ mysample2 <- mysample %>%
   rename(Index1 = spi1, Index2 = spi2) %>%
   select(Index1, Index2, team1, team2)
 
-mysample4 <- summary(mysample2)
+mysample3 <- summary(mysample2)
 
-print(mysample4)
+print(mysample3)
 
