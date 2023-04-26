@@ -65,9 +65,7 @@ mysample2 <- mysample %>%
   arrange(date) %>%
   filter(spi1 < 80) %>%
   rename(Index1 = spi1, Index2 = spi2) %>%
-  select(Index1, Index2, team1, team2)
-
-mysample3 <- summary(mysample2)
-
-print(mysample3)
+  select(Index1, Index2, team1, team2) %>%
+  summary() %>%
+  print()
 
